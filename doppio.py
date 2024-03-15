@@ -15,10 +15,17 @@ def affinity():
     food("sushi")
 
 
-if __name__ == "__affinity__":
-    affinity()
+import blanku
+
+
+
+def check_squared():
+    assert blanku.squared(2) == 4
+    assert blanku.squared(3) == 10
+
+
+if __name__ == "__main__":
+    check_squared()
 # __name__ is a special variable that is set by python to be "main"
 # when you call a file in the terminal
 # When you are importing a file, and not running directly under the command line, 'Main' will not get called.
-
-

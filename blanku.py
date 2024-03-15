@@ -402,7 +402,6 @@ import random
 # main()
 
 
-
 # def main():
 #     x = get_int("what is x: ")
 #     print(f"x is {x}")
@@ -414,9 +413,6 @@ import random
 #         except ValueError:
 #             pass
 # main()
-
-
-
 
 
 # def main():
@@ -511,26 +507,18 @@ import json
 #     print(result["trackName"]) #print out the result's trackname
 
 import sys
-from doppio import future # from the filename 'doppio' import a function called affinity.import
 
-if len(sys.argv) == 2:
-    future(sys.argv[1])
+import doppio  # from the filename 'doppio' import a function.
 
 
+def main():
+    x = int(input("x?: "))
+    print(f"Answer is ", squared(x))
 
 
+def squared(number):
+    return number ** 2
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    main()
